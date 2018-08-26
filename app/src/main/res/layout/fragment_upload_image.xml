@@ -1,0 +1,58 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F5F5"
+    tools:context="com.example.roma.patientapp.presentation.edit_profile.upload_image.UploadImageFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/dp32h"
+        android:layout_marginTop="@dimen/dp32h"
+        android:layout_marginLeft="@dimen/dp20w"
+        android:layout_marginRight="@dimen/dp20w"
+        android:background="#FFFFFF"
+        android:elevation="@dimen/dp20h"
+        android:gravity="center_horizontal">
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/photo_iv"
+            android:layout_width="@dimen/dp160w"
+            android:layout_height="@dimen/dp160h"
+            android:layout_marginTop="@dimen/dp93h"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/girl" />
+
+        <TextView
+            android:id="@+id/skip_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/div"
+            android:layout_marginBottom="@dimen/dp22h"
+            android:layout_centerHorizontal="true"
+            android:text="@string/change_pw_skip_btn"
+            android:textSize="@dimen/sp14" />
+
+        <View
+            android:id="@+id/div"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_above="@+id/upload_photo_tv"
+            android:layout_marginBottom="@dimen/dp14h"
+            android:background="@drawable/divider" />
+
+        <TextView
+            android:id="@+id/upload_photo_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/dp15h"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/sp24"
+            android:text="@string/change_pw_upload_photo_tv" />
+    </RelativeLayout>
+</FrameLayout>
+

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/profile_item"
+        android:title="@string/nav_profile_item"
+        android:icon="@drawable/ic_drawer_profile" />
+
+    <item
+        android:id="@+id/appoint_item"
+        android:title="@string/nav_appointments_item"
+        android:icon="@drawable/ic_drawer_appoint" />
+
+    <item
+        android:id="@+id/setting_item"
+        android:title="@string/nav_settings_item"
+        android:icon="@drawable/ic_drawer_settings" />
+
+    <item
+        android:id="@+id/logout_item"
+        android:title="@string/nav_logout_item"
+        android:icon="@drawable/ic_drawer_logout" />
+
+    <item
+        android:id="@+id/about_item"
+        android:title="@string/nav_about_item"
+        android:icon="@drawable/ic_drawer_info" />
+</menu>

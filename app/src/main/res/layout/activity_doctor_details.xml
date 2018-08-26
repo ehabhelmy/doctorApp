@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.roma.patientapp.presentation.doctor_details.DoctorDetailsActivity">
+
+    <LinearLayout
+        android:id="@+id/ll"
+        android:layout_width="match_parent"
+        android:layout_height="192dp"
+        android:weightSum="2">
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/girl" />
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/colorPrimary">
+
+            <TextView
+                android:id="@+id/fName_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp10w"
+                android:layout_marginTop="@dimen/dp20w"
+                android:text="Dina"
+                android:textColor="@color/color_white"
+                android:textSize="@dimen/sp22" />
+
+            <LinearLayout
+                android:id="@+id/rating_ll"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignTop="@id/fName_tv"
+                android:background="@drawable/rating_bck">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/star_white" />
+
+                <TextView
+                    android:id="@+id/rating_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp3w"
+                    android:text="4.8"
+                    android:textColor="@color/color_white" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/lName_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/fName_tv"
+                android:layout_marginLeft="@dimen/dp10w"
+                android:layout_marginTop="@dimen/dp2h"
+                android:text=""
+                android:textColor="@color/color_white"
+                android:textSize="@dimen/sp22" />
+
+            <TextView
+                android:id="@+id/speciality_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/lName_tv"
+                android:layout_marginLeft="@dimen/dp10w"
+                android:layout_marginTop="@dimen/dp8h"
+                android:text="Obstetrics/Gynecology"
+                android:textColor="@color/color_white"
+                android:textSize="@dimen/sp12" />
+
+            <TextView
+                android:id="@+id/price_tv"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp48h"
+                android:layout_alignParentBottom="true"
+                android:background="@color/color_doc_details_fees_bg"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/dp10w"
+                android:text="Fees 150 EGP (60% Discount)" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/days_ll"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp40h"
+        android:layout_below="@+id/ll"
+        android:layout_marginLeft="@dimen/dp23w"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/days_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sun - Wed"
+            android:textSize="@dimen/sp13"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/time_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp3w"
+            android:text="4:30 PM - 6:30 PM"
+            android:textSize="@dimen/sp13" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp1h"
+        android:layout_below="@+id/days_ll"
+        android:background="@drawable/separator" />
+
+    <LinearLayout
+        android:id="@+id/first_avaliable_ll"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp40h"
+        android:layout_below="@+id/days_ll"
+        android:layout_marginLeft="@dimen/dp23w"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/first_day_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="First Available:"
+            android:textSize="@dimen/sp13"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/first_time_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp3w"
+            android:text="Monday, Mar 26 | 6:30 PM"
+            android:textSize="@dimen/sp13" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp1h"
+        android:layout_below="@+id/first_avaliable_ll"
+        android:background="@drawable/separator" />
+
+    <RelativeLayout
+        android:id="@+id/loc_rl"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp40h"
+        android:layout_below="@+id/first_avaliable_ll"
+        android:layout_marginLeft="@dimen/dp23w"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="12 Eldokky Square"
+            android:textColor="@color/color_doc_details_location_tx"
+            android:textSize="@dimen/sp14" />
+
+        <ImageView
+            android:id="@+id/loc_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/dp44w"
+            android:src="@drawable/ic_location" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp1h"
+        android:layout_below="@+id/loc_rl"
+        android:background="@drawable/separator" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="@dimen/dp64w"
+        android:layout_height="@dimen/dp64h"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_gravity="bottom|end"
+        android:layout_marginBottom="@dimen/dp35w"
+        android:layout_marginRight="@dimen/dp35w"
+        android:src="@drawable/ic_plus"
+        app:backgroundTint="@color/color_doc_details_fab"
+        app:fabSize="normal" />
+
+</RelativeLayout>

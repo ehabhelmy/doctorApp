@@ -1,0 +1,11 @@
+
+’squid:S1319"vThe type of the "allRequests" object should be an interface such as "List" rather than the implementation "ArrayList".(œôÃÅ8ƒÃ²ËÉ,
+Z"squid:SwitchLastCaseIsDefaultCheck""Add a default case to this switch.(øå´¡ÿÿÿÿÿ8à–ËÉ,
+\squid:UselessImportCheck".Remove this unused import 'android.view.View'.(Ø½­äşÿÿÿÿ8ƒÃ²ËÉ,
+«squid:UselessImportCheck"Remove this unused import 'com.example.roma.patientapp.presentation.home.book_appointment.adapter.AppointmentRequestDetailModel'.(ıé²Ä8—åƒÍÉ,
+squid:S1319"|The type of the "cancelledRequests" object should be an interface such as "List" rather than the implementation "ArrayList".(Œ–İ˜øÿÿÿÿ8ƒÃ²ËÉ,
+†squid:UselessImportCheck"XRemove this unused import 'com.example.roma.patientapp.data.model.search_doctor.Doctor'.(ñ…¯Üûÿÿÿÿ8ñğÑÉ,
+csquid:MaximumInheritanceDepth"<This class has 8 parents which is greater than 5 authorized.(‚î‰
+–squid:S1319"zThe type of the "pendingRequests" object should be an interface such as "List" rather than the implementation "ArrayList".(¹ë‡À8ƒÃ²ËÉ,
+œsquid:S1319"{The type of the "approvedRequests" object should be an interface such as "List" rather than the implementation "ArrayList".(é¦Ûøÿÿÿÿ8ƒÃ²ËÉ,
+šsquid:UselessImportCheck"lRemove this unused import 'com.example.roma.patientapp.presentation.home.search_doctor.SearchDoctorAdapter'.(¹Š€˜üÿÿÿÿ8‚¼íÑÉ,

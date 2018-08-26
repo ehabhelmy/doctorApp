@@ -1,0 +1,82 @@
+<resources>
+    <string name="app_name">DoctorApp</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!-- change pw screen -->
+    <string name="change_pw_id_hint">ID Number</string>
+    <string name="change_pw_name_hint">Name</string>
+    <string name="change_pw_date_of_birth_hint">Date of birth</string>
+    <string name="change_pw_phone_number_hint">Phone number</string>
+    <string name="change_pw_city_hint">City</string>
+    <string name="change_pw_email_hint">Email</string>
+    <string name="change_pw_hint">Change password</string>
+    <string name="change_pw_next_btn">Next</string>
+    <string name="change_pw_skip_btn">Skip</string>
+    <string name="change_pw_upload_photo_tv">Upload Photo</string>
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+
+    <!-- navigation menu item -->
+    <string name="nav_profile_item">Edit Profile</string>
+    <string name="nav_appointments_item">Schedule</string>
+    <string name="nav_settings_item">Settings</string>
+    <string name="nav_logout_item">Log out</string>
+    <string name="nav_about_item">About Mowafer</string>
+
+    <!-- appointments screen -->
+    <string name="appointments_all">All</string>
+    <string name="appointments_pending">Pending</string>
+    <string name="appointments_approved">Approved</string>
+    <string name="appointments_cancelled">Cancelled</string>
+    <string name="login_btn">Sign in</string>
+    <string name="login_forget_pw">Forget Password ?</string>
+    <string name="login_id_hint">ID Number</string>
+    <string name="login_pw_hint">Password</string>
+    <string name="new_password_hint">New Password</string>
+    <string name="confirm_password_hint">Confirm Password</string>
+    <string name="change_password_btn">Change Password</string>
+    <string name="toolbar_title">Requests</string>
+    <string name="add">ADD</string>
+    <string name="clock_prompt">Select A Time</string>
+    <string name="approve">Approve</string>
+    <string name="reject">Reject</string>
+    <string name="cancel">Cancel</string>
+    <string name="finish">Finish</string>
+    <string name="submit">Submit</string>
+    <string name="select_day">Select A Day</string>
+    <string name="success">Success</string>
+    <string name="approved">Appointment Approved Successfully</string>
+    <string name="rejected">Appointment Rejected</string>
+    <string name="finished">Appointment Finished</string>
+    <string name="submitted">Appointments are submitted sucessfully</string>
+    <string name="failure">Failure</string>
+    <string-array name="time_array">
+        <item >01:00</item>
+        <item >02:00</item>
+        <item >03:00</item>
+        <item >04:00</item>
+        <item >05:00</item>
+        <item >06:00</item>
+        <item >07:00</item>
+        <item >08:00</item>
+        <item >09:00</item>
+        <item >10:00</item>
+        <item >11:00</item>
+        <item >12:00</item>
+        <item >13:00</item>
+        <item >14:00</item>
+        <item >15:00</item>
+        <item >16:00</item>
+        <item >17:00</item>
+        <item >18:00</item>
+        <item >19:00</item>
+        <item >20:00</item>
+        <item >21:00</item>
+        <item >22:00</item>
+        <item >23:00</item>
+        <item >24:00</item>
+    </string-array>
+
+</resources>

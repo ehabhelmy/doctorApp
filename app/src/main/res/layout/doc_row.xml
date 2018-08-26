@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/photo_iv"
+        android:layout_width="@dimen/dp32w"
+        android:layout_height="@dimen/dp32h"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/dp16w"
+        android:src="@drawable/girl" />
+
+    <TextView
+        android:id="@+id/name_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp24w"
+        android:layout_marginTop="@dimen/dp5h"
+        android:layout_toRightOf="@+id/photo_iv"
+        android:text="Dina AbdelHady"
+        android:textSize="@dimen/sp14" />
+
+    <TextView
+        android:id="@+id/speciality_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/name_tv"
+        android:layout_below="@+id/name_tv"
+        android:layout_marginTop="@dimen/dp5h"
+        android:text="Obstetrics_Gynecology"
+        android:textSize="@dimen/sp12" />
+
+    <TextView
+        android:id="@+id/date_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/speciality_tv"
+        android:layout_below="@+id/speciality_tv"
+        android:layout_marginBottom="@dimen/dp10w"
+        android:layout_marginTop="@dimen/dp5h"
+        android:text="Sun - Wed | 4:30 PM - 6:30 PM"
+        android:textSize="@dimen/sp11" />
+
+</RelativeLayout>

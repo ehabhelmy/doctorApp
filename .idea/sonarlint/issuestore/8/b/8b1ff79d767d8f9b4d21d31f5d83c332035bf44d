@@ -1,0 +1,11 @@
+
+„squid:UselessImportCheck"[Remove this unused import 'com.example.roma.patientapp.domain.usecase.SearchDoctorUseCase'.(ÃÇŠ×8ışÌËÉ,
+ssquid:S3776"RRefactor this method to reduce its Cognitive Complexity from 17 to the 15 allowed.(†­ï‰ùÿÿÿÿ8®ú„£Ê,
+ˆsquid:UselessImportCheck"ZRemove this unused import 'com.example.roma.patientapp.data.model.regions.RegionResponse'.(ÈÁëùøÿÿÿÿ8°ÏËÉ,
+‚squid:UselessImportCheck"YRemove this unused import 'com.example.roma.patientapp.domain.usecase.AllRegionsUseCase'.(ÊÕÌÌ8ışÌËÉ,
+isquid:S1192"MDefine a constant instead of duplicating this literal "Server error" 4 times.(Ğù—¦8®ú„£Ê,
+squid:UselessImportCheck"fRemove this unused import 'com.example.roma.patientapp.data.model.search_doctor.SearchDoctorResponse'.(š¸Ù»8–èÎËÉ,
+“squid:UselessImportCheck"eRemove this unused import 'com.example.roma.patientapp.data.model.specialities.SpecialitiesResponse'.(¨Úñ™ÿÿÿÿÿ8°ÏËÉ,
+Œsquid:UselessImportCheck"^Remove this unused import 'com.example.roma.patientapp.domain.usecase.AllSpecialitiesUseCase'.(î›¹êÿÿÿÿÿ8ışÌËÉ,
+†squid:UselessImportCheck"XRemove this unused import 'com.example.roma.patientapp.data.model.search_doctor.Doctor'.(ñ…¯Üûÿÿÿÿ8–èÎËÉ,
+Ysquid:S1068"8Remove this unused "requestStatusUseCase" private field.(ñ®¾ºøÿÿÿÿ8®ú„£Ê,

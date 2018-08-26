@@ -1,0 +1,63 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@android:color/white"
+    tools:context="com.example.roma.patientapp.presentation.home.appointments.AppointmentsFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
+        android:background="@color/color_appointments_header"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/all_requests_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingRight="@dimen/dp20w"
+            android:paddingLeft="@dimen/dp20w"
+            android:paddingBottom="@dimen/dp10h"
+            android:paddingTop="@dimen/dp10h"
+            android:background="@drawable/rect_round"
+            android:gravity="center"
+            android:text="@string/appointments_all" />
+
+        <TextView
+            android:id="@+id/pending_requests_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dp10h"
+            android:layout_marginLeft="@dimen/dp10w"
+            android:background="@drawable/rect_round"
+            android:gravity="center"
+            android:text="@string/appointments_pending" />
+
+        <TextView
+            android:id="@+id/approved_requests_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dp10h"
+            android:layout_marginLeft="@dimen/dp10w"
+            android:background="@drawable/rect_round"
+            android:gravity="center"
+            android:text="@string/appointments_approved" />
+
+        <TextView
+            android:id="@+id/cancelled_requests_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dp10h"
+            android:layout_marginLeft="@dimen/dp10w"
+            android:background="@drawable/rect_round"
+            android:gravity="center"
+            android:text="@string/appointments_cancelled" />
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/appointments_rv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

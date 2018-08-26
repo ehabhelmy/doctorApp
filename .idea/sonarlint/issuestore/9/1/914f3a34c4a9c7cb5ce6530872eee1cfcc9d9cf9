@@ -1,0 +1,18 @@
+
+¢squid:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(¹Æº×şÿÿÿÿ8·ú„£Ê,
+~squid:UselessImportCheck"URemove this unused import 'com.prolificinteractive.materialcalendarview.CalendarDay'.(æ÷Ç÷8·ú„£Ê,
+gsquid:S1301"KReplace this "switch" statement by "if" statements to increase readability.(ºÖ8˜ÚôÓÉ,
+Zsquid:UselessImportCheck"1Remove this unused import 'butterknife.Unbinder'.(Ÿœ«Å8˜ÚôÓÉ,
+Tsquid:UselessImportCheck"+Remove this unused import 'java.util.Date'.(¸…¼ü8·ú„£Ê,
+\squid:UselessImportCheck"3Remove this unused import 'android.view.ViewGroup'.(‹îá8˜ÚôÓÉ,
+\squid:UselessImportCheck".Remove this unused import 'android.os.Bundle'.(°şÊóøÿÿÿÿ8˜ÚôÓÉ,
+„squid:UselessImportCheck"VRemove this unused import 'com.prolificinteractive.materialcalendarview.CalendarMode'.(äìŠÖûÿÿÿÿ8·ú„£Ê,
+asquid:UselessImportCheck"8Remove this unused import 'android.view.LayoutInflater'.(À¯ÑÇ8˜ÚôÓÉ,
+U"squid:SwitchLastCaseIsDefaultCheck""Add a default case to this switch.(ºÖ8˜ÚôÓÉ,
+¢squid:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(¹Æº×şÿÿÿÿ8·ú„£Ê,
+£squid:UselessImportCheck"uRemove this unused import 'com.example.roma.patientapp.presentation.home.book_appointment.AppointmentBookedActivity'.(œüäûÿÿÿÿ8·ú„£Ê,
+ssquid:UselessImportCheck"JRemove this unused import 'android.support.v7.widget.DefaultItemAnimator'.(ÿ”ÓÑ8·ú„£Ê,
+Œsquid:UselessImportCheck"^Remove this unused import 'com.prolificinteractive.materialcalendarview.MaterialCalendarView'.(Şêüÿÿÿÿ8·ú„£Ê,
+Xsquid:UselessImportCheck"/Remove this unused import 'java.util.Calendar'.(ÿÛö´8·ú„£Ê,
+¢squid:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(¹Æº×şÿÿÿÿ8·ú„£Ê,
+bsquid:UselessImportCheck"4Remove this unused import 'butterknife.ButterKnife'.(Ùî²™şÿÿÿÿ8˜ÚôÓÉ,

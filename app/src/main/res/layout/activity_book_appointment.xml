@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/date_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp16w"
+        android:layout_marginTop="@dimen/dp17h">
+
+        <TextView
+            android:id="@+id/today_date_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/sp12"
+            android:text="27 September" />
+
+        <TextView
+            android:id="@+id/tommorrow_date_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp8w"
+            android:textSize="@dimen/sp12"
+            android:text="28 September" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/titles_rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/date_ll"
+        android:layout_marginLeft="@dimen/dp16w"
+        android:layout_marginTop="@dimen/dp16h">
+
+        <TextView
+            android:id="@+id/today_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/sp16"
+            android:text="Today" />
+
+        <TextView
+            android:id="@+id/tommorrow_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp16w"
+            android:layout_toRightOf="@id/today_tv"
+            android:textSize="@dimen/sp16"
+            android:text="Tommorrow" />
+
+        <TextView
+            android:id="@+id/calender_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/dp16w"
+            android:textSize="@dimen/sp16"
+            android:text="Calender" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/appointment_rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/titles_rl"
+        android:layout_marginLeft="@dimen/dp8w"
+        android:layout_marginRight="@dimen/dp8w"
+        android:layout_marginTop="@dimen/dp16h"
+        android:background="@drawable/appoint_view1"
+        android:visibility="visible">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true">
+        </android.support.v7.widget.RecyclerView>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/calender_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@+id/titles_rl"
+        android:layout_marginTop="@dimen/dp16h"
+        android:layout_centerInParent="true"
+        android:visibility="gone">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp8w"
+            android:layout_marginRight="@dimen/dp8w"
+            android:background="@drawable/appoint_view3">
+            <com.prolificinteractive.materialcalendarview.MaterialCalendarView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/calendarView"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="8dp"
+                app:mcv_tileWidth="match_parent"
+                app:mcv_showOtherDates="out_of_range"
+                app:mcv_selectionColor="#2BCD6E"
+                app:mcv_firstDayOfWeek="friday"
+                />
+        </RelativeLayout>
+
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/years_rv"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="@dimen/dp30w"
+            android:layout_marginRight="@dimen/dp30w">
+        </android.support.v7.widget.RecyclerView>
+
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/months_rv"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="@dimen/dp18w"
+            android:layout_marginRight="@dimen/dp18w">
+        </android.support.v7.widget.RecyclerView>
+
+    </LinearLayout>
+    <RelativeLayout
+        android:id="@+id/booking_rl"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dp64h"
+        android:layout_alignParentBottom="true">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp1h"
+            android:background="@drawable/separator" />
+
+        <TextView
+            android:id="@+id/fees_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp24w"
+            android:layout_marginTop="@dimen/dp14h"
+            android:text="250 EGP" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/fees_tv"
+            android:layout_below="@+id/fees_tv"
+            android:layout_marginTop="@dimen/dp4h"
+            android:text="Visit fees" />
+
+        <Button
+            android:layout_width="@dimen/dp164w"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/dp12w"
+            android:text="Book" />
+    </RelativeLayout>
+</RelativeLayout>

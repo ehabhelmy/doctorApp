@@ -1,0 +1,3 @@
+
+«squid:UselessImportCheck"Remove this unused import 'com.example.roma.patientapp.presentation.home.book_appointment.adapter.AppointmentRequestDetailModel'.(ıé²Ä8‚…ÍÉ,
+„squid:S1319"oThe type of the "data" object should be an interface such as "List" rather than the implementation "ArrayList".(ãÜÆê

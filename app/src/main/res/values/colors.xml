@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#2BCD6E</color>
+    <color name="colorPrimaryDark">#009B41</color>
+    <color name="colorAccent">#c4f0d6</color>
+    <color name="color_appointments_header">#0A454553</color>
+
+    <color name="color_white">#FFFFFF</color>
+    <color name="color_login_btn_txt">#25C074</color>
+    <color name="color_login_hint">#99FFFFFF</color>
+    <color name="color_login_forget_pw">#E5E8EC</color>
+
+    <color name="color_change_pw_shadow">#F5F5F5</color>
+    <color name="color_change_pw_et">#2BCD6E</color>
+    <color name="color_change_pw_hint">#992BCD6E</color>
+    <color name="color_change_pw_txt">#6C6C6C</color>
+
+
+    <color name="color_doc_details_fees_bg">#6DFF9D</color>
+    <color name="color_doc_details_location_tx">#4285F4</color>
+    <color name="color_doc_details_fab">#FF5722</color>
+
+
+    <color name="color_appointment_title_clicked">#675F5F</color>
+    <color name="color_appointment_title_not_clicked">#66675F5F</color>
+
+
+</resources>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp48h"
+        android:gravity="center"
+        android:text="6:30 PM"/>
+    <View
+        android:id="@+id/bottom_green_div"
+        android:layout_width="@dimen/dp246w"
+        android:layout_height="@dimen/dp1h"
+        android:layout_below="@+id/tv"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/line_green"
+        android:visibility="gone"/>
+
+    <View
+        android:id="@+id/bottom_grey_div"
+        android:layout_width="@dimen/dp124w"
+        android:layout_height="@dimen/dp1h"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/separator"
+        android:layout_below="@+id/bottom_green_div"
+        android:visibility="gone"/>
+</RelativeLayout>

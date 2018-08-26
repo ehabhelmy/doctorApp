@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bck_splash"
+    android:orientation="vertical">
+    <ImageView
+        android:id="@+id/logo_iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/dp70h"
+        android:src="@drawable/logo_small" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp70h"
+        android:fillViewport="true"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/dp25w"
+            android:paddingRight="@dimen/dp25w">
+
+            <android.support.v7.widget.AppCompatEditText
+                android:id="@+id/id_et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/login_id_hint"
+                android:textColor="@color/color_white"
+                android:textColorHint="@color/color_login_hint"
+                android:textSize="@dimen/sp16"
+                app:backgroundTint="@color/color_login_hint" />
+
+            <android.support.v7.widget.AppCompatEditText
+                android:id="@+id/pw_et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp20h"
+                android:hint="@string/login_pw_hint"
+                android:textColor="@color/color_white"
+                android:textColorHint="@color/color_login_hint"
+                android:textSize="@dimen/sp16"
+                app:backgroundTint="@color/color_login_hint" />
+
+            <Button
+                android:id="@+id/sign_in_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp40h"
+                android:background="@drawable/white_button_large"
+                android:gravity="center"
+                android:text="@string/login_btn"
+                android:textColor="@color/color_login_btn_txt" />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
+

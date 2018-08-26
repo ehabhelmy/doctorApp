@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.roma.patientapp.presentation.home.HomeActivity">
+
+    <android.support.v4.widget.DrawerLayout
+        android:id="@+id/nav_drawer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="@color/colorPrimary"
+                android:paddingBottom="@dimen/dp8h"
+                android:paddingRight="@dimen/dp8w"
+                android:paddingTop="@dimen/dp8h"
+                android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+                app:title="@string/toolbar_title"
+                app:titleTextColor="@android:color/white">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/menu_iv"
+                        android:layout_width="@dimen/dp26w"
+                        android:layout_height="@dimen/dp26h"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_menu_white" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/dp5h">
+
+                    </LinearLayout>
+                </LinearLayout>
+            </android.support.v7.widget.Toolbar>
+
+            <FrameLayout
+                android:id="@+id/home_container"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:background="@android:color/white">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="72dp"
+                        android:background="@color/color_appointments_header"
+                        android:gravity="center">
+
+                        <TextView
+                            android:id="@+id/all_requests_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingRight="@dimen/dp20w"
+                            android:paddingLeft="@dimen/dp20w"
+                            android:paddingBottom="@dimen/dp10h"
+                            android:paddingTop="@dimen/dp10h"
+                            android:elevation="@dimen/dp8h"
+                            android:background="@drawable/rect_round"
+                            android:gravity="center"
+                            android:text="@string/appointments_all" />
+
+                        <TextView
+                            android:id="@+id/pending_requests_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:elevation="@dimen/dp8h"
+                            android:padding="@dimen/dp10h"
+                            android:layout_marginLeft="@dimen/dp10w"
+                            android:background="@drawable/rect_round"
+                            android:gravity="center"
+                            android:text="@string/appointments_pending" />
+
+                        <TextView
+                            android:id="@+id/approved_requests_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="@dimen/dp10h"
+                            android:elevation="@dimen/dp8h"
+                            android:layout_marginLeft="@dimen/dp10w"
+                            android:background="@drawable/rect_round"
+                            android:gravity="center"
+                            android:text="@string/appointments_approved" />
+
+                        <TextView
+                            android:id="@+id/cancelled_requests_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="@dimen/dp10h"
+                            android:elevation="@dimen/dp8h"
+                            android:layout_marginLeft="@dimen/dp10w"
+                            android:background="@drawable/rect_round"
+                            android:gravity="center"
+                            android:text="@string/appointments_cancelled" />
+                    </LinearLayout>
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/appointments_rv"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+
+                </LinearLayout>
+            </FrameLayout>
+
+        </LinearLayout>
+
+
+        <android.support.design.widget.NavigationView
+            android:id="@+id/nav_view"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            android:fitsSystemWindows="true"
+            app:headerLayout="@layout/nav_header"
+            app:menu="@menu/nav_menu">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|center_horizontal"
+                android:layout_marginBottom="27dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="find Mowafer on"
+                    android:textColor="#2BCD6E" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_web" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="33dp"
+                        android:src="@drawable/ic_twit" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="33dp"
+                        android:src="@drawable/ic_face" />
+                </LinearLayout>
+            </LinearLayout>
+        </android.support.design.widget.NavigationView>
+
+    </android.support.v4.widget.DrawerLayout>
+</LinearLayout>

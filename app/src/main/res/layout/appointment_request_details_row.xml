@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dp100h"
+    android:paddingBottom="@dimen/dp6h"
+    android:paddingTop="@dimen/dp6h">
+
+    <ImageView
+        android:id="@+id/photo_iv"
+        android:layout_width="@dimen/dp32w"
+        android:layout_height="@dimen/dp32h"
+        android:layout_gravity="center"
+        android:layout_marginStart="@dimen/dp10w"
+        android:src="@drawable/girl" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/container"
+        android:layout_toEndOf="@id/photo_iv"
+        android:layout_marginStart="@dimen/dp12w"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/name_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp5h" />
+
+        <TextView
+            android:id="@+id/time_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp10h"
+            android:text="27 March (Today) | 8:30 PM" />
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/container"
+        android:layout_marginTop="@dimen/dp10h"
+        android:layout_marginEnd="@dimen/dp16w"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp5h"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="bold"
+            android:id="@+id/approve"
+            android:layout_marginStart="@dimen/dp50w"
+            android:text="@string/approve"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_marginTop="@dimen/dp5h"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:id="@+id/reject"
+            android:textColor="@color/color_doc_details_fab"
+            android:layout_marginStart="@dimen/dp50w"
+            android:text="@string/reject"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:id="@+id/finish"
+            android:textColor="@color/color_doc_details_fab"
+            android:layout_marginTop="@dimen/dp5h"
+            android:layout_marginStart="@dimen/dp50w"
+            android:text="@string/finish"/>
+    </LinearLayout>
+</RelativeLayout>
